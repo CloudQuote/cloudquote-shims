@@ -1,7 +1,7 @@
 export const Object = {
  values: window.Object.values || function (obj) {
-  let vals = [];
-  for (let key in obj) {
+  var vals = [];
+  for (var key in obj) {
    if (obj.hasOwnProperty(key)) {
     vals.push(obj[key]);
    }
