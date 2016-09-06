@@ -15,4 +15,5 @@ export const Object = {
   }
   return entrys;
  }
-}
+};
+
