@@ -1,6 +1,6 @@
-export {
- Object: {
-  values: window.Object.values || function (obj) {
+module.exports = {
+ 'Object': {
+  values: Object.values || function (obj) {
    var vals = [];
    for (var key in obj) {
     if (obj.hasOwnProperty(key)) {
@@ -9,7 +9,7 @@ export {
    }
    return vals;
   },
-  entries: window.Object.entries || function (obj) {
+  entries: Object.entries || function (obj) {
    var entrys = [];
    for (var key in obj) {
     if (obj.hasOwnProperty(key)) entrys.push([key, obj[key]]);
@@ -17,5 +17,5 @@ export {
    return entrys;
   }
  }
-}
+};
 
